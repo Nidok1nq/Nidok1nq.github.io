@@ -13,6 +13,7 @@
         <h1 style = "text-align: center">
            The Hitchhiker's Guide to LUA.
         </h1>
+
         <h1>
             "Getting Started"
         </h1>
@@ -27,7 +28,44 @@
             </div>
         </p>
 
+        <h1>
+            "Variables"
+        </h1>
+        <p>
+            Once you have down the basic "print" you can move into printing vaiables.  A variable is identified as shown in the code below:
+            <div class="box">
+                <pre>
+                    <code class="language-lua line-numbers">
+                        local variable = 100
+                    </code>
+                </pre>
+            </div>
+        </p>
+
+        <h1>
+            "Using/Changing Variables"
+        </h1>
+        <p>
+            Once a variable is set, it can be utilized or changed, as shown below:
+            <div class="box">
+                <pre>
+                    <code class="language-lua line-numbers">
+                        local variable = 100
+
+                        --Printing a variable
+                        print(variable + 100) -- prints 200
+
+                        --Changing a variable
+                        variable = variable + 100
+                        print(variable) -- prints 200
+                    </code>
+                </pre>
+            </div>
+        </p>
+
         <script src = "js/prism.js"></script>
+
+
     </body>
 </head>
 
