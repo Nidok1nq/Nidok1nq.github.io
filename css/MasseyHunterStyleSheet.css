@@ -1,13 +1,77 @@
 body {
-  background-color: rgb(44,44,44);
+  background-color: rgb(27,27,29);
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  width: 50%;
+  top: 7.5%;
+  left: 15%;
+  padding-top: 20px;
+  padding-left: 10%;
+}
+
+.topbar {
+  background-color: rgb(36, 37, 38);
+  height: 7.5%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+.sidenav {
+  background-color: rgb(27,27,29);
+  height: 100%;
+  width: 15%;
+  position: fixed;
+  z-index: 1;
+  top: 7.5%;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+  transition: 0.5s;
+  border-right: 1px solid rgb(227,227,227);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 40px;
+  grid-gap: 5px;
+}
+
+.sidenav a {
+  width: 90%; height: 50px;
+  margin: auto;
+  text-decoration: none;
+  font-size: 125%;
+  color: rgb(218, 218, 218);
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+.sidenav a:hover {
+  background-color: rgb(39, 39, 41);
+  font-size: 150%;
 }
 
 h1 {
-  color: rgb(255,255,255);
+  color: rgb(227,227,227);
   text-align: center;
 }
 
 h2 {
-  color: rgb(222,222,222);
-  text-align: left
+  color: rgb(227,227,227);
+  text-align: left;
+  font-size: 300%;
+}
+
+.description a {
+  color: rgb(227, 227, 227);
+  text-align: left;
+  font-size: 100%;
+  text-wrap: wrap;
+  padding-top: 10px;
+}
+
+.description a.href {
+  color: rgb(52, 111, 207)
 }

@@ -1,0 +1,125 @@
+<h1>
+            <a href = "https://prismjs.com/">
+                <img src = images/prism.png alt = "Prism Logo" style = "width: 100px; height: 100px;">
+            </a>
+           The Hitchhiker's Guide to LUA.
+           <a href = "https://lua.org">
+                <img src = images/lua.png alt = "LUA Logo" style = "width: 100px; height: 100px;">
+           </a>
+        </h1>
+
+        <h2>
+            <a href = "https://www.lua.org/pil/1.html">
+            "Getting Started"
+            </a>
+        </h2>
+        <p>
+            <div class="box">
+                <pre>
+                    <code class="language-lua line-numbers">
+                        --As in most coding languages, the most basic function possible is printing "Hello World".
+                        --In LUA, this is done with the following code:
+                        
+                        print("Hello World")
+                    </code>
+                </pre>
+            </div>
+        </p>
+
+        <h2>
+            "Variables"
+        </h2>
+        <p>
+           <div class="box">
+                <pre>
+                    <code class="language-lua line-numbers">
+                        --Once you know how to print something, you can move into assigning variables.
+                        --A variable can be identified by the following code:
+                        
+                        local variable = 100
+                    </code>
+                </pre>
+            </div>
+        </p>
+
+        <h2>
+            "Using/Changing Variables"
+        </h2>
+        <p>
+            <div class="box">
+                <pre>
+                    <code class="language-lua line-numbers">
+                        --Once a variable is set, it can be utilized or changed with the following:
+                        
+                        local variable = 100
+
+                        --Printing a variable
+                        print(variable + 100) -- prints 200
+
+                        --Changing a variable
+                        variable = variable + 100
+                        print(variable) -- prints 200
+                    </code>
+                </pre>
+            </div>
+        </p>
+
+        <h2>
+            <a href = "https://www.lua.org/pil/2.5.html">
+                "Tables"
+            </a>
+        </h2>
+        <p>
+            <div class="box">
+                <pre>
+                    <code class="language-lua line-numbers">
+                        --A table can be set in a way similar to a variable, but can contain a various amoutn of them.
+                        --The code below shows how to identify a table and whatever is inside of it:
+                        
+                        local table = {100, 200, 300}
+                    </code>
+                </pre>
+            </div>
+        </p>
+
+        <h2>
+            "Using/Changing Tables"
+        </h2>
+        <p>
+            <div class="box">
+                <pre>
+                    <code class="language-lua line-numbers">
+                        --Utilizing a table is similar to utilizing a variable.  Below shows how to do so:
+                        
+                        local table = {100, 200, 300}
+
+                        --Printing a part of a table
+                        print(table[1]) -- prints 100
+
+                        --Changing a part of a table
+                        table[1] = 200
+                        print(table[1]) -- prints 200
+                    </code>
+                </pre>
+            </div>
+        </p>
+
+        <script src = "js/prism.js"></script>
+
+        <ul>
+            <li>
+                <a href = "https://www.lua.org">
+                    LUAs official website was used for some of the information in this guide.
+                </a>
+            </li>
+            <li>
+                <a href = "https://prismjs.com/">
+                    Prism was used to format the code in this guide.
+                </a>
+            </li>
+            <li>
+                This guide was inspired by my own experience learning LUA and is no where near complete.
+            </li>
+        </ul>
+
+        <img src = "images/meingif.gif" alt = "MeinGif" style = "width: 100px; height: 100px;">

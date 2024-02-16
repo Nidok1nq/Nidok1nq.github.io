@@ -9,131 +9,81 @@
     <link href = "css/prism.css" rel = "stylesheet">
     
     <body>
-        <h1>
-            <a href = "https://prismjs.com/">
-                <img src = images/prism.png alt = "Prism Logo" style = "width: 100px; height: 100px;">
-            </a>
-           The Hitchhiker's Guide to LUA.
-           <a href = "https://lua.org">
-                <img src = images/lua.png alt = "LUA Logo" style = "width: 100px; height: 100px;">
-           </a>
-        </h1>
 
-        <h2>
-            <a href = "https://www.lua.org/pil/1.html">
-            "Getting Started"
-            </a>
-        </h2>
-        <p>
+        <div id="topBar" class="topbar">
+            <h1>
+               The Hitchhiker's Guide to LUA.
+            </h1>
+        </div>
+
+        <div id="sideNav" class="sidenav">
+            <a href = "#" onclick="changeView('About')">About</a>
+            <a href = "#" onclick="changeView('Getting Started')">Getting Started</a>
+            <a href = "#" onclick="changeView('Tables')">Tables</a>
+        </div>
+
+        <div id="About" class="view" style="display:none"> 
+            <h2>
+                About
+            </h2>
+            <div class="description">
+                <a> A brief introduction into the coding language LUA.  The inspiration is brought on by my interest in coding via the ROBLOX platform.
+                    <br> <br>
+                    Anything covered in this guide will be covering the form of LUA used in ROBLOX, not the official language.
+                    <br> <br>
+                    See the</a> <a href = "#" onclick="changeView('Getting Started')"> Getting Started</a>
+                    <a> page to begin learning lua!</a>
+            </div>
+            <h2>
+                Disclaimer(s)/Source(s)
+            </h2>
+            <div class="description">
+                <a> Althought most of this guide covers knowledge I've gained over the years, most can be found using the </a>
+                <a href = "https://lua.org"> official lua website </a>
+                <a> <br> or the </a> <a href = "https://create.roblox.com"> ROBLOX developers hub. </a>
+                <a> <br> <br> To design the code blocks seen throughout this guide I used a free source, </a> <a href = "https://prismjs.com/"> prism.</a>
+
+                <a href = "https://lua.org">
+                    <br> <br> <img src = images/lua.png alt = "LUA Logo" style = "width: 100px; height: 100px;">
+                </a>
+
+                <a href = "https://roblox.com">
+                    <br> <br> <img src = images/roblox.png alt = "LUA Logo" style = "width: 100px; height: 100px;">
+                </a>
+               
+                <a href = "https://prismjs.com/">
+                    <br> <br> <img src = images/prism.png alt = "Prism Logo" style = "width: 100px; height: 100px;">
+                </a>
+            </div>
+        </div>
+
+        <div id="Getting Started" class="view">
+            
+            <h2>
+                Getting Started
+            </h2>
+            
+            <div class="description">
+                <a> As in most coding languages, lua in its simpliest form can be portrayed as follows: </a>
+            </div>
+
             <div class="box">
                 <pre>
-                    <code class="language-lua line-numbers">
-                        --As in most coding languages, the most basic function possible is printing "Hello World".
-                        --In LUA, this is done with the following code:
-                        
-                        print("Hello World")
-                    </code>
+                    <code class="language-lua line-numbers">print("Hello World")
+                    --Prints "Hello World" to the console.</code>
                 </pre>
             </div>
-        </p>
 
-        <h2>
-            "Variables"
-        </h2>
-        <p>
-           <div class="box">
-                <pre>
-                    <code class="language-lua line-numbers">
-                        --Once you know how to print something, you can move into assigning variables.
-                        --A variable can be identified by the following code:
-                        
-                        local variable = 100
-                    </code>
-                </pre>
-            </div>
-        </p>
+        </div>
 
-        <h2>
-            "Using/Changing Variables"
-        </h2>
-        <p>
-            <div class="box">
-                <pre>
-                    <code class="language-lua line-numbers">
-                        --Once a variable is set, it can be utilized or changed with the following:
-                        
-                        local variable = 100
-
-                        --Printing a variable
-                        print(variable + 100) -- prints 200
-
-                        --Changing a variable
-                        variable = variable + 100
-                        print(variable) -- prints 200
-                    </code>
-                </pre>
-            </div>
-        </p>
-
-        <h2>
-            <a href = "https://www.lua.org/pil/2.5.html">
-                "Tables"
-            </a>
-        </h2>
-        <p>
-            <div class="box">
-                <pre>
-                    <code class="language-lua line-numbers">
-                        --A table can be set in a way similar to a variable, but can contain a various amoutn of them.
-                        --The code below shows how to identify a table and whatever is inside of it:
-                        
-                        local table = {100, 200, 300}
-                    </code>
-                </pre>
-            </div>
-        </p>
-
-        <h2>
-            "Using/Changing Tables"
-        </h2>
-        <p>
-            <div class="box">
-                <pre>
-                    <code class="language-lua line-numbers">
-                        --Utilizing a table is similar to utilizing a variable.  Below shows how to do so:
-                        
-                        local table = {100, 200, 300}
-
-                        --Printing a part of a table
-                        print(table[1]) -- prints 100
-
-                        --Changing a part of a table
-                        table[1] = 200
-                        print(table[1]) -- prints 200
-                    </code>
-                </pre>
-            </div>
-        </p>
+        <div id="Tables" class="view" style="display:none">
+            <h2>
+                Tables
+            </h2>
+        </div>
 
         <script src = "js/prism.js"></script>
-
-        <ul>
-            <li>
-                <a href = "https://www.lua.org">
-                    LUAs official website was used for some of the information in this guide.
-                </a>
-            </li>
-            <li>
-                <a href = "https://prismjs.com/">
-                    Prism was used to format the code in this guide.
-                </a>
-            </li>
-            <li>
-                This guide was inspired by my own experience learning LUA and is no where near complete.
-            </li>
-        </ul>
-
-        <img src = "images/meingif.gif" alt = "MeinGif" style = "width: 100px; height: 100px;">
+        <script src = "js/MasseyHunterJavaScript.js"></script>
     </body>
 </head>
 

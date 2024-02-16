@@ -1,5 +1,5 @@
 /* PrismJS 1.29.0
-https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript+etlua+lua+markup-templating&plugins=line-numbers */
+https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript+etlua+lua+markup-templating&plugins=line-numbers */
 /// <reference lib="WebWorker"/>
 
 var _self = (typeof window !== 'undefined')
