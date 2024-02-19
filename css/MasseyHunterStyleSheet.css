@@ -9,6 +9,23 @@ body {
   padding-left: 10%;
 }
 
+h1 {
+  color: rgb(227,227,227);
+  text-align: center;
+}
+
+h2 {
+  color: rgb(227,227,227);
+  text-align: left;
+  font-size: 300%;
+}
+
+p {
+  color: rgb(227,227,227);
+  text-align: left;
+  font-size: 100%;
+}
+
 .topbar {
   background-color: rgb(36, 37, 38);
   height: 7.5%;
@@ -42,6 +59,7 @@ body {
   margin: auto;
   text-decoration: none;
   font-size: 125%;
+  background-color: rgba(39, 39, 41, 0);
   color: rgb(218, 218, 218);
   transition: 0.3s;
   display: flex;
@@ -49,29 +67,36 @@ body {
 }
 
 .sidenav a:hover {
-  background-color: rgb(39, 39, 41);
+  background-color: rgba(39, 39, 41, 1);
   font-size: 150%;
-}
-
-h1 {
-  color: rgb(227,227,227);
-  text-align: center;
-}
-
-h2 {
-  color: rgb(227,227,227);
-  text-align: left;
-  font-size: 300%;
 }
 
 .description a {
   color: rgb(227, 227, 227);
   text-align: left;
   font-size: 100%;
-  text-wrap: wrap;
   padding-top: 10px;
 }
 
 .description a.href {
   color: rgb(52, 111, 207)
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bolditalic {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.hyperlink {
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
 }

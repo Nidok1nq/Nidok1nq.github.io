@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head> 
+    <title>Print("Hello World")</title> 
+    <link href = "css/MasseyHunterStyleSheet.css" rel = "stylesheet">
+    <link href = "css/prism.css" rel = "stylesheet">
+</head>
+
+<body>
+
+    <div id="topBar" class="topbar">
+        <h1>
+           The Hitchhiker's Guide to LUA.
+        </h1>
+    </div>
+
+    <div id="sideNav" class="sidenav">
+        <a id="AboutSidebar" class="sidebar" href = "#" onclick="changeView('About')">About</a>
+        <a id="Getting_StartedSidebar" class="sidebar" href = "#" onclick="changeView('Getting_Started')">Getting Started</a>
+        <a id="TablesSidebar" class="sidebar" href = "#" onclick="changeView('Tables')">Tables</a>
+    </div>
+
+    <div id="About" class="view"> 
+        <h2>
+            About
+        </h2>
+        <div class="description">
+            <a> A brief introduction into the coding language LUA.  The inspiration is brought on by my interest in coding via the ROBLOX platform.
+                <br> <br>
+                Anything covered in this guide will be covering the form of LUA used in ROBLOX, not the <span class="bolditalic">official language.</span>
+                <br> <br>
+
+                See the <span class="hyperlink" href="#" onclick="changeView('Getting_Started')">Getting Started</span> page to begin learning lua!
+        </div>
+        <h2>
+            Disclaimer(s)/Source(s)
+        </h2>
+        <div class="description">
+
+            <a>
+                Although most of the guide covers knowledge I've gained over the years, most can be found using the
+                <span class="hyperlink" href="https://lua.org">official lua website</span> <br> or on the
+                <span class="hyperlink" href="https://create.roblox.com">ROBLOX developers hub.</span> <br> <br>
+                To design the code blocks seen throughout this guide I used a free source,
+                <span class="hyperlink" href="https://prismjs.com/">prism.</span>
+            </a>
+
+            <a href = "https://lua.org">
+                <br> <br> <img src = images/lua.png alt = "LUA Logo" style = "width: 100px; height: 100px;">
+            </a>
+
+            <a href = "https://roblox.com">
+                <br> <br> <img src = images/roblox.png alt = "LUA Logo" style = "width: 100px; height: 100px;">
+            </a>
+           
+            <a href = "https://prismjs.com/">
+                <br> <br> <img src = images/prism.png alt = "Prism Logo" style = "width: 100px; height: 100px;">
+            </a>
+        </div>
+    </div>
+
+    <div id="Getting_Started" class="view" style="display:none">
+        
+        <h2>Getting Started</h2>
+        
+        <div class="description">
+            <a> As in most coding languages, lua in its simpliest form can be portrayed as follows: </a>
+        </div>
+
+        <div class="box">
+            <pre>
+                <code class="language-lua line-numbers">print("Hello World")
+                --Prints "Hello World" to the console.</code>
+            </pre>
+        </div>
+
+        <h2>Variables</h2>
+
+        <div class="description">
+
+            <a> 
+                Variables are used to <span class="bold">store data,</span>
+                such as <span class="italic">numbers, strings, and tables.</span>
+                In lua, variables are declared as follows:
+            </a>
+
+        </div>
+
+        <div class="box">
+            <pre>
+                <code class="language-lua line-numbers">local x = 5
+                print(x)
+                --Prints 5 to the console.</code>
+            </pre>
+        </div>
+
+        <div class="description">
+            <a>
+                <br>Once a variable is declared, it can be changed at any time.  For example:
+            </a>
+        </div>
+
+        <div class="box">
+            <pre>
+                <code class="language-lua line-numbers">local x = 5
+                print(x)
+                --Prints 5 to the console.
+                x = x + 5
+                print(x)
+                --Prints 10 to the console.</code>
+            </pre>
+        </div>
+
+        <div class="description">
+            <a>
+                <br>Variables can also store strings, which are declared as follows:
+            </a>
+        </div>
+        <div class="box">
+            <pre>
+                <code class="language-lua line-numbers">local name = "John"
+                print(name)
+                --Prints John to the console.</code>
+            </pre>
+        </div>
+        <div class="description">
+            <a>
+                <br>Strings can also be concatenated using the .. operator.  For example:
+            </a>
+        </div>
+        <div class="box">
+            <pre>
+                <code class="language-lua line-numbers">local firstName = "John"
+                local lastName = "Doe"
+                print(firstName .. " " .. lastName)
+                --Prints John Doe to the console.</code>
+            </pre>
+        </div>
+    </div>
+
+    <div id="Tables" class="view" style="display:none">
+        <h2>Tables</h2>
+
+        <div class="description">
+            <a>
+                Tables are used to store multiple values in a single variable.  They are similar to arrays in other languages.
+                <br> <br>
+                Tables are declared as follows:
+            </a>
+        </div>
+        <div class="box">
+            <pre>
+                <code class="language-lua line-numbers">local table = {1, 2, 3, 4, 5}
+                print(table[1])
+                --Prints 1 to the console.</code>
+            </pre>
+        </div>
+        <div class="description">
+            <a>
+                <br>Tables can also store other tables, as well as other data types.
+                <br> <br>
+                For example:
+            </a>
+        </div>
+        <div class="box">
+            <pre>
+                <code class="language-lua line-numbers">local table = {{0, 0, 0}, {1, 1, 1}, {2, 2, 2}}
+                print(table[1][1])
+                --Prints 0 to the console.</code>
+                </code>
+            </pre>
+        </div>
+        <div class="description">
+            <a>
+                <br>Tables can also be used to store key-value pairs, similar to dictionaries in other languages.
+                <br> <br>
+                For example:
+            </a>
+        </div>
+        <div class="box">
+            <pre>
+                <code class="language-lua line-numbers">local table = {name = "John", age = 25}
+                print(table.name)
+                --Prints John to the console.</code>
+            </pre>
+        </div>
+    </div>
+
+    <script src = "js/prism.js"></script>
+    <script src = "js/MasseyHunterJavaScript.js"></script>
+</body>
+
+</html>
