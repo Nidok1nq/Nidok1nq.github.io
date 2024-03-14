@@ -18,6 +18,7 @@
         <a id="AboutSidebar" class="sidebar" href = "#" onclick="changeView('About')">About</a>
         <a id="Getting_StartedSidebar" class="sidebar" href = "#" onclick="changeView('Getting_Started')">Getting Started</a>
         <a id="TablesSidebar" class="sidebar" href = "#" onclick="changeView('Tables')">Tables</a>
+        <a id="FormsSidebar" class="sidebar" href = "#" onclick="changeView('Forms')">Forms</a>
     </div>
 
     <div id="About" class="view"> 
@@ -30,7 +31,8 @@
                 Anything covered in this guide will be covering the form of LUA used in ROBLOX, not the <span class="bolditalic">official language.</span>
                 <br> <br>
 
-                See the <span class="hyperlink" href="#" onclick="changeView('Getting_Started')">Getting Started</span> page to begin learning lua!
+                See the <span class="hyperlink" onclick="changeView('Getting_Started')">Getting Started</span> page to begin learning lua!
+            </a>
         </div>
         <h2>
             Disclaimer(s)/Source(s)
@@ -39,10 +41,10 @@
 
             <a>
                 Although most of the guide covers knowledge I've gained over the years, most can be found using the
-                <span class="hyperlink" href="https://lua.org">official lua website</span> <br> or on the
-                <span class="hyperlink" href="https://create.roblox.com">ROBLOX developers hub.</span> <br> <br>
+                <span class="hyperlink" onclick="openWebpage('lua')">official lua website</span> <br> or on the
+                <span class="hyperlink" onclick="openWebpage('roblox')">ROBLOX developers hub.</span> <br> <br>
                 To design the code blocks seen throughout this guide I used a free source,
-                <span class="hyperlink" href="https://prismjs.com/">prism.</span>
+                <span class="hyperlink" onclick="openWebpage('prism')">prism.</span>
             </a>
 
             <a href = "https://lua.org">
@@ -167,7 +169,6 @@
                 <code class="language-lua line-numbers">local table = {{0, 0, 0}, {1, 1, 1}, {2, 2, 2}}
                 print(table[1][1])
                 --Prints 0 to the console.</code>
-                </code>
             </pre>
         </div>
         <div class="description">
@@ -184,7 +185,87 @@
                 --Prints John to the console.</code>
             </pre>
         </div>
+        <table>
+            <caption>Week 4 assignment; I don't really know how to implement this into my project...</caption>
+            <tr>
+                <th>Assignment</th>
+                <th>Grade</th>
+            </tr>
+            <tr>
+                <td>Week 1</td>
+                <td>96.5%</td>
+            </tr>
+            <tr>
+                <td>Week 2</td>
+                <td>100%</td>
+            </tr>
+            <tr>
+                <td>Week 3</td>
+                <td>90%</td>
+            </tr>
+        </table>
     </div>
+
+    <div id="Forms" class="view" style="display:none">
+        <h2>Forms</h2>
+
+        <form action="http://ss1.ciwcertified.com/cgi-bin/process.pl" method="post">
+
+            <div class = "description">
+                <a>
+                    Full Name:
+                </a>
+            </div>
+
+            <input type="text" id="name" name="name">
+
+            <br> <br>
+
+            <div class = "description">
+                <a>
+                    Favorite Ice Cream Flavor:
+                </a>
+            </div>
+
+            <input type="radio" id="chocolate" name="flavor" value="chocolate">
+            <label for="chocolate">Chocolate</label>
+            <input type="radio" id="vanilla" name="flavor" value="vanilla">
+            <label for="vanilla">Vanilla</label>
+            <input type="radio" id="strawberry" name="flavor" value="strawberry">
+            <label for="strawberry">Strawberry</label>
+
+            <br> <br>
+
+            <div class = "description">
+                <a>
+                    Please select your favorite coding language:
+                </a>
+            </div>
+
+            <select id="language" name="language">
+                <option value="lua">LUA</option>
+                <option value="python">Python</option>
+                <option value="javascript">JavaScript</option>
+                <option value="html">HTML</option>
+            </select>
+
+            <br> <br>
+
+            <div class = "description">
+                <a>
+                    Please provide feedback on how I can make my site better:
+                </a>
+            </div>
+
+            <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea>
+
+            <br> <br>
+
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
 
     <script src = "js/prism.js"></script>
     <script src = "js/MasseyHunterJavaScript.js"></script>
