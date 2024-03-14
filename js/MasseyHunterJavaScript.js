@@ -21,4 +21,16 @@ function changeView(view) {
     changeSidebar();
 }
 
+function openWebpage(form) {
+    if (form == "lua") {
+        window.open("https://www.lua.org/");
+    }
+    if (form == "roblox") {
+        window.open("https://create.roblox.com/");
+    }
+    if (form == "prism") {
+        window.open("https://prismjs.com/");
+    }
+}
+
 changeSidebar();

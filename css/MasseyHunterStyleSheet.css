@@ -26,6 +26,28 @@ p {
   font-size: 100%;
 }
 
+table {
+  background-color: antiquewhite;
+  color: rgb(60, 60, 60);
+  font-size: 100%;
+  border-collapse: collapse;
+  border: 2px solid rgb(53, 120, 229);
+  width: 100%;
+}
+
+table caption {
+  color: antiquewhite;
+  padding: 0px;
+  text-align: center;
+}
+
+table th, table td {
+  text-align: center;
+}
+
+form label {
+  color: rgb(227,227,227);
+}
 .topbar {
   background-color: rgb(36, 37, 38);
   height: 7.5%;
